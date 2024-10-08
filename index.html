@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renato é corno ?</title>
+</head>
+
+<body>
+    <div id="conteudo"
+><h3>Renato é corno</h3>
+        
+<button onclick="sim()">SIM</button>
+<button onmouseover="desvia(this)">NÃO</button>
+    </div>
+
+
+
+</body>
+
+
+><style>
+#conteudo{background: red;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align:center;}
+</style>
+
+><script>
+
+    function sim() {
+        alert("Sim ele é um baita de um corno")
+    }
+
+    function desvia(t){
+        var btn = t
+        btn.style.position = 'absolute';
+        btn.style.top =geraPosicao(10, 90)
+        btn.style.left=geraPosicao(10, 90)
+        console.log("desviando")
+
+
+
+    }
+
+    function geraPosicao(min, max) {
+  return Math.floor(Math.random() * (max - min ) + min) + "%";
+}
+</script>
+</html>
